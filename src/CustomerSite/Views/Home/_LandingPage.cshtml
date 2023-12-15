@@ -11,8 +11,12 @@
     <div class="container" id="divHome">
         <form method="post" id="frmIndex">
 
+            <div class="text-center">
+                <h1 class="display-4"><a href="https://www.videospace.co" target="_blank"><img src="https://vsaas.videospace.co/included/images/videospace_logo.png" style="max-width: 300px; display: block; margin-left: auto; margin-right: auto; padding-top:10px;padding-bottom:10px;" id="headerImage" /></a></h1>
+            </div>
+
             <div class="text-white mt20">
-                <span class="cm-section-heading">Subscription Details</span>
+                <span class="cm-section-heading">Video-Search-as-a-Service (VSaaS) - Subscription Details</span>
             </div>
             @if (Model != null && !string.IsNullOrEmpty(Model.ErrorMessage))
             {
@@ -101,7 +105,9 @@
                                     <dt class="col-sm-3 p-2 p10 @Model.SubscriptionParameters[i].Type">
                                         @Html.DisplayFor(model => model.SubscriptionParameters[i].DisplayName, new { required = "required", @class = @Model.SubscriptionParameters[i].Type })
                                         @if (Model.SubscriptionParameters[i].IsRequired == true)
-                                        {<span class="red-star @Model.SubscriptionParameters[i].Type">*</span>}
+                                        {
+                                            <span class="red-star @Model.SubscriptionParameters[i].Type">*</span>
+                                        }
 
 
                                     </dt>
@@ -205,29 +211,103 @@
             }
         </form>
     </div>
+
+
+    <div class="text-left">
+        <p>
+            <h2>Video-Search-as-a-Service (VSaaS) by Videospace</h2>
+            <ul>
+                <li>Our unique proposition is <b>Deep Video Search</b>.</li>
+                <li>Videospace search and extracts <b>video data and intelligence</b>.</li>
+                <li>Videospace VSaaS allows you to find specific scenes instantly.</li>
+            </ul>
+        </p>
+        <p>
+            <h2>Video AI and Search</h2>
+            Being pioneers in Deep Video Search, we created various <b>world's first in Deep Video Search</b>!
+            Videospace's Video Search Engine, arguably the world's most advanced video search engine, is the first to combine various video data elements into a single video search platform:
+            <ul>
+                <li><b>Speech Recognition</b> (More than 100 languages)</li>
+                <li><b>Translation</b> (more than 60 languages)</li>
+                <li><b>Tags in multi-languages</b> (from speech)</li>
+                <li><b>Tags or Labels</b> (from visual)</li>
+                <li><b>Object</b> detection (detects over 20,000 objects)</li>
+                <li><b>Logo</b> detection (from major global brands)</li>
+                <li><b>Faces</b> (detects up to 64 faces in a single frame)</li>
+                <li><b>Emotion</b> (detects up to 8 major emotions)</li>
+            </ul>
+        </p>
+        <p>
+            <h2>Why is Video Search so important?</h2>
+            Videospace allows you to:
+            <ol>
+                <li><b>Extend</b> your video’s reach globally by translating into another language</li>
+                <li><b>Search</b> your videos. Allowing users to discover content instantly.</li>
+                <li><b>Extract</b> video data and intelligence, giving you insights and analytics.</li>
+                <li><b>Market</b> your services by generating Video SEO in multiple languages automatically.li>
+            </ol>
+        </p>
+        <p>For more information, please check out our <a href="https://www.videospace.co" target="_blank">website</a>.</p>
+
+    </div>
 }
 else
 {
     <div class="pt-5">
         <div class="card p-3 ">
             <div class="text-center">
-                <h1 class="display-4">Welcome</h1>
+                <h1 class="display-4"><a href="https://www.videospace.co" target="_blank"><img src="https://vsaas.videospace.co/included/images/videospace_logo.png" style="max-width: 300px; display: block; margin-left: auto; margin-right: auto; padding-top:10px;padding-bottom:10px;" id="headerImage" /></a></h1>
             </div>
             <div class="text-left">
+                <p>
+                    <h2>Video-Search-as-a-Service (VSaaS) by Videospace</h2>
+                    <ul>
+                        <li>Our unique proposition is <b>Deep Video Search</b>.</li>
+                        <li>Videospace search and extracts <b>video data and intelligence</b>.</li>
+                        <li>Videospace VSaaS allows you to find specific scenes instantly.</li>
+                    </ul>
+                </p>
+                <p>
+                    <h2>Video AI and Search</h2>
+                    Being pioneers in Deep Video Search, we created various <b>world's first in Deep Video Search</b>!
+                    Videospace's Video Search Engine, arguably the world's most advanced video search engine, is the first to combine various video data elements into a single video search platform:
+                    <ul>
+                        <li><b>Speech Recognition</b> (More than 100 languages)</li>
+                        <li><b>Translation</b> (more than 60 languages)</li>
+                        <li><b>Tags in multi-languages</b> (from speech)</li>
+                        <li><b>Tags or Labels</b> (from visual)</li>
+                        <li><b>Object</b> detection (detects over 20,000 objects)</li>
+                        <li><b>Logo</b> detection (from major global brands)</li>
+                        <li><b>Faces</b> (detects up to 64 faces in a single frame)</li>
+                        <li><b>Emotion</b> (detects up to 8 major emotions)</li>
+                    </ul>
+                </p>
+                <p>
+                    <h2>Why is Video Search so important?</h2>
+                    Videospace allows you to:
+                    <ol>
+                        <li><b>Extend</b> your video’s reach globally by translating into another language</li>
+                        <li><b>Search</b> your videos. Allowing users to discover content instantly.</li>
+                        <li><b>Extract</b> video data and intelligence, giving you insights and analytics.</li>
+                        <li><b>Market</b> your services by generating Video SEO in multiple languages automatically.li>
+                    </ol>
+                </p>
+                <p>For more information, please check out our <a href="https://www.videospace.co" target="_blank">website</a>.</p>
+                <hr />
+                <h2>Subscribe from Microsoft Marketplace</h2>
+                <ul>
+                    <li>Search for resources of type <b> Software as a Service (SaaS)</b>.</li>
+                    <li>Search for 'Videospace'.</li>
+                    <li>Click <b> Create</b> to subscribe to the offer.</li>
+                    <li>Click <b>Configure Account </b> after the subscription created.</li>
+                </ul>
+            </div>
+            <!--div class="text-left">
                 <p>
                     Get started with integrating your <b> Software as a Service (SaaS) </b> solution with the <b> SaaS fulfillment APIs version 2 in Microsoft commercial marketplace. </b>
                 </p>
                 <p><a href="https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2" target="_blank">Click here </a><span>for the API documentation.</span> </p>
-            </div>
-            <div>
-                <b>To purchase this SaaS offer:</b>
-                <ul>
-                    <li>Search for resources of type <b> Software as a Service (SaaS) </b></li>
-                    <li>Search for your offer</li>
-                    <li>Click <b> Create</b> to subscribe to the offer</li>
-                    <li>Click <b>Configure Account </b> after the subscription created</li>
-                </ul>
-            </div>
+            </div-->
         </div>
     </div>
 }
